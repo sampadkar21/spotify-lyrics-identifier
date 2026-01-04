@@ -155,37 +155,6 @@ def hybrid_search(query, alpha=0.7):
 
 ---
 
-## 🔬 Example Usage
-
-```python
-from src.inference import SongIdentifier
-
-identifier = SongIdentifier()
-
-# Example 1: Famous chorus
-results = identifier.search(
-    "We will we will rock you",
-    top_k=1
-)
-# Output: "We Will Rock You" by Queen
-
-# Example 2: Verse snippet  
-results = identifier.search(
-    "Just a small town girl living in a lonely world",
-    top_k=1
-)
-# Output: "Don't Stop Believin'" by Journey
-
-# Example 3: Obscure lyrics
-results = identifier.search(
-    "The screen door slams Mary's dress waves",
-    top_k=1  
-)
-# Output: "Thunder Road" by Bruce Springsteen
-```
-
----
-
 ## 🛠️ Technologies Used
 
 | Component | Technology |
