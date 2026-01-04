@@ -32,12 +32,7 @@ spotify-lyrics-identifier/
 │   └── 02_model_evaluation.ipynb    
 │
 ├── src/
-│   ├── vector_store.py            
-│   ├── inference.py                 
-│   └── preprocessing.py            
-│
-├── data/
-│   └── README.md                    
+│    └── inference.py                                                       
 ├── requirements.txt
 └── README.md
 ```
@@ -203,33 +198,6 @@ results = identifier.search(
 | **Visualization** | Matplotlib, tqdm |
 
 ---
-
-## 📝 Key Implementation Details
-
-### Vector Store Class
-
-```python
-class VectorStore:
-    def __init__(self, db_name, embedding_model):
-        self.client = weaviate.connect_to_embedded()
-        self.embedding_model = embedding_model
-        
-    def add_documents(self, data_list):
-        """Vectorize and store songs with metadata"""
-        for song in data_list:
-            vector = self.embedding_model.encode(song['text'])
-            # Store: song, artist, text, vector
-            
-    def hybrid_search(self, query, alpha=0.7, top_k=5):
-        """Combine semantic + keyword search"""
-        query_vector = self.embedding_model.encode(query)
-        return self.client.query.hybrid(
-            query=query,
-            vector=query_vector,
-            alpha=alpha,  # 0.7 = 70% semantic, 30% BM25
-            limit=top_k
-        )
-```
 
 ### Accuracy Calculation
 
