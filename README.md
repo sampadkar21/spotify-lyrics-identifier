@@ -64,7 +64,7 @@ print(f"🎯 Confidence: {results[0]['score']:.2%}")
 
 ## 📈 Performance Analysis
 
-The system has been rigorously tested on the **Spotify Million Song Dataset**. By utilizing the hybrid retrieval strategy, we achieve industry-leading accuracy:
+The system has been rigorously tested on the **Spotify Million Song Dataset**. By utilizing the hybrid retrieval strategy, we achieve industry-leading accuracy on 1000 random samples from the dataset:
 
 | Metric | Result |
 | --- | --- |
