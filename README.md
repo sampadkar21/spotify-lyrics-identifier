@@ -55,8 +55,8 @@ results = identifier.search(
     top_k=1
 )
 
-print(f"✅ Found: {results[0]['song']} by {results[0]['artist']}")
-print(f"🎯 Confidence: {results[0]['score']:.2%}")
+print(f" Found: {results[0]['song']} by {results[0]['artist']}")
+print(f"Confidence: {results[0]['score']:.2%}")
 
 ```
 
