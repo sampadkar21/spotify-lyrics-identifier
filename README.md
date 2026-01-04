@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 To use the system, you must download the pre-computed vector database. This folder contains the HNSW graphs and inverted indexes for 57,650 songs.
 
-* **📦 [Download Pre-processed DB (2.1 GB)**][(https://www.google.com/search?q=%23](https://limewire.com/d/7ArNG#6qx31SPpS7) 
+* **📦 [Download Pre-processed DB][(https://www.google.com/search?q=%23](https://limewire.com/d/7ArNG#6qx31SPpS7) 
 * **Action**: Unzip the file and place the `weaviate_data/` folder directly into the project root.
 
 ### 3. Identify a Song
